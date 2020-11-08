@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background: url(../images/brushed.png);
+}
+
+#navbar {
+	height: 70px;
+	width: 100%;
+	background: #111447;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 15px;
+	position: fixed;
+}
+
+#navbar h2 a {
+	color: #fff;
+	text-decoration: none;
+	float: left;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+#navbar ul {
+	float: right;
+	margin-top: 12px;
+	margin-right: 20px;
+	display: flex;
+}
+
+#navbar ul li {
+	list-style-type: none;
+	padding: 5px 8px;
+}
+
+#navbar ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	border: 2px solid #fff;
+	padding: 8px 12px;
+	display: block;
+}
+
+#navbar ul li a.active {
+	background: red;
+	color: #fff;
+}
+
+#navbar ul li a:hover {
+	color: #fff;
+	background: red;
+	transition: 0.4s ease;
+}
+
+.toggle img {
+	float: right;
+	height: 50px;
+	width: auto;
+	margin-top: 10px;
+	margin-right: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+.loginbox {
+	height: 400px;
+	background: rgba(0,0,0,0.5);
+	width: 20%;
+	float: left;
+	width: 300px;
+	margin-top: 100px;
+	margin-left: 20px;
+	border: 4px solid #111447;
+	border-radius: 5px 5px 5px 5px;
+}
+
+@media (max-width: 768px) {
+	.toggle img {
+		display: block;
+	}
+
+	#navbar ul {
+		display: none;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#navbar ul.active {
+		display: block;
+	}
+
+	#navbar ul li {
+		padding: 0px;
+	}
+
+	#navbar ul li a {
+		text-align: center;
+		background: rgba(0,0,0,0.5);
+		border: none;
+	}
+
+	.loginbox {
+		width: 80%;
+		margin-left: 10%;
+		padding: 0px;
+	}
+
+
+}

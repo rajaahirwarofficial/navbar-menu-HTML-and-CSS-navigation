@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Testing</title>
+	<link rel="stylesheet" type="text/css" href="css/style12.css">
+	<meta charset="utf-8">
+     <script src="https://code.jquery.com/jquery-1.1.4.js" integrity="" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+            $('.toggle').click(function(){
+                     $('ul').toggleClass('active');
+            })
+		})
+	</script>
+</head>
+<body>
+ <div id="navbar">
+ 	<h2><a href="#">Web Testing</a></h2>
+ 	<a class="toggle"><img src="images/bar2.png"></a>
+ 	<ul>
+ 		<li><a href="#" class="active">Home</a></li>
+ 		<li><a href="#">Download</a></li>
+ 		<li><a href="#">Contact</a></li>
+ 		<li><a href="#">About</a></li>
+ 	</ul>
+ </div>
+ <div class="loginbox"></div>
+</body>
+</html>
